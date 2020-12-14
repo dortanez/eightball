@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/eightball/static/css/main.8a8db4d6.chunk.css",
+    "main.js": "/eightball/static/js/main.eb029bd3.chunk.js",
+    "main.js.map": "/eightball/static/js/main.eb029bd3.chunk.js.map",
+    "runtime-main.js": "/eightball/static/js/runtime-main.59e24a19.js",
+    "runtime-main.js.map": "/eightball/static/js/runtime-main.59e24a19.js.map",
+    "static/js/2.0ef824a8.chunk.js": "/eightball/static/js/2.0ef824a8.chunk.js",
+    "static/js/2.0ef824a8.chunk.js.map": "/eightball/static/js/2.0ef824a8.chunk.js.map",
+    "static/js/3.87a43b54.chunk.js": "/eightball/static/js/3.87a43b54.chunk.js",
+    "static/js/3.87a43b54.chunk.js.map": "/eightball/static/js/3.87a43b54.chunk.js.map",
+    "index.html": "/eightball/index.html",
+    "static/css/main.8a8db4d6.chunk.css.map": "/eightball/static/css/main.8a8db4d6.chunk.css.map",
+    "static/js/2.0ef824a8.chunk.js.LICENSE.txt": "/eightball/static/js/2.0ef824a8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59e24a19.js",
+    "static/js/2.0ef824a8.chunk.js",
+    "static/css/main.8a8db4d6.chunk.css",
+    "static/js/main.eb029bd3.chunk.js"
+  ]
+}
