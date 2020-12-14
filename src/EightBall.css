@@ -16,3 +16,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.EightBall-btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 1% 2%;
+    border-radius: 5%;
+    display: block;
+    margin: auto;
+}
+
+.EightBall-p {
+    display: inline-block;
+    margin: 1% 5%;
+}

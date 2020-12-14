@@ -2,18 +2,42 @@ import React, {useState} from 'react';
 import './EightBall.css';
 
 const EightBall = (props) => {
-    const randomNum = Math.floor(Math.random() * props.answers.length);
     const setBall = () => {
-        setMessage(props.answers[randomNum].msg);
-        setColor(props.answers[randomNum].color);
+        const ran = Math.floor(Math.random() * props.answers.length);
+        setMessage(props.answers[ran].msg);
+        setColor(props.answers[ran].color);
+        if(props.answers[ran].color === 'green') {
+            setGreen(green + 1);
+        } else if(props.answers[ran].color === 'goldenrod') {
+            setYellow(yellow + 1);
+        } else {
+            setRed(red + 1);
+        }
     }
     const [message, setMessage] = useState('Think of a Question');
-    const [colorr, setColor] = useState('black')
+
+    const [colorr, setColor] = useState('black');
+
+    const [green, setGreen] = useState(0)
+    const [yellow, setYellow] = useState(0)
+    const [red, setRed] = useState(0)
+
+    const reset = () => {
+        setMessage('Think of a Question');
+        setColor('black');
+        setGreen(0);
+        setYellow(0);
+        setRed(0);
+    }
     return (
         <div className='EightBall'>
-            <div className='EightBall-div' onClick={setBall}>
+            <div style={{backgroundColor: colorr}}className='EightBall-div' onClick={setBall}>
                 <h1 className='EightBall-text'>{message}</h1>
             </div>
+            <button onClick={reset}className='EightBall-btn'>Reset</button>
+            <p className='EightBall-p'>Green: {green}</p>
+            <p className='EightBall-p'>Yellow: {yellow}</p>
+            <p className='EightBall-p'>Red: {red}</p>
         </div>
     )
 }
